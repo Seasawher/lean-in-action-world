@@ -1,4 +1,4 @@
-name: 'Hello Docker アクション'
+name: 'Hello アクション'
 description: '誰かに挨拶をして、その時間を返す'
 inputs:
   who-to-greet:
