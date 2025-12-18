@@ -8,6 +8,7 @@ package "Action" where
 
 @[default_target]
 lean_lib «Action» where
+  globs := #[.submodules `Action]
 
 lean_exe action where
   root := `Action
