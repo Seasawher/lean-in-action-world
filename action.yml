@@ -5,8 +5,8 @@ inputs:
     description: '誰に挨拶するか'
     required: true
 outputs:
-  time:
-    description: '挨拶した時間'
+  who-was-greeted:
+    description: '誰に挨拶したか、敬称付きで返す'
 runs:
   using: 'docker'
   image: 'Dockerfile'

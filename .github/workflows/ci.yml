@@ -18,5 +18,10 @@ jobs:
 
       - name: Run Docker Action
         uses: ./
+        id: action-step
         with:
           who-to-greet: 'Lean'
+
+      - name: assert output
+        if: steps.action-step.outputs.who-was-greeted != 'Lean-san'
+        run: exit 1
